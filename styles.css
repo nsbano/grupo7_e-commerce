@@ -1,0 +1,146 @@
+* {
+	font-family: Arial;
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+body {
+	background-image: url('img/background.jpg');
+	    background-size: cover;
+		background-repeat: no-repeat;
+}
+header {
+	width:100%;
+
+}
+header nav {
+	width:90%;
+	max-width:1300px;
+	margin:20px auto;
+	background: rgb(150,0,24,0.8);
+}
+.fixed-top {
+	position: relative;
+}
+
+.navbar {
+background: rgb(150,0,24,0.8);
+}
+.container {
+	margin-top: 0px;
+
+}
+.inputstl {
+
+    padding: 9px;
+    border: solid 1px #B3FFB3;
+    outline: 0;
+    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
+
+    }
+
+.btn-success {
+	background-color: grey;
+	border-color: black;
+}
+
+.footer{
+  width: 100%;
+  padding: 5px 10px;
+  position: relative;
+  bottom: 0px;
+  background-color:rgb(150,0,24,0.8);
+  display: flex;
+  flex-flow: column;
+  }
+
+ul{
+ padding: 0;
+ margin: 0;
+}
+li {
+  list-style: none;
+  margin: 0 0 3px 0;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+a:hover {
+  color: white;
+}
+
+.footer_1{
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+.footer_2{
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+}
+
+#medio{
+  border-left: solid;
+  border-right: solid;
+  border-width: thin;
+  border-color: white;
+}
+.footer_3{
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer_4{
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.afip img {
+  width: 50px;
+  padding: 10px;
+}
+
+.dh img{
+  width: 190px;
+  padding: 10px;
+}
+
+.footer_11{
+  padding: 20px;
+  width: 33%;
+  text-align: center;
+}
+
+@media (max-width:800px) {
+  .footer{
+    height:auto;
+  }
+  .footer_1{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+  }
+  .footer_11{
+    padding: 20px;
+    width: 100%;
+  }
+
+  #medio{
+    border: none;
+  }
+
+}
