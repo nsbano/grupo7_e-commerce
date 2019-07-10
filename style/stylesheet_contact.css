@@ -1,0 +1,238 @@
+* {
+	font-family: Arial;
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+body {
+	background-image: url("background.jpg");
+	  background-size: cover;
+		background-repeat: no-repeat;
+}
+.generalwrapper{
+  min-height: 100%;
+}
+
+header {
+	width:100%;
+}
+
+header nav {
+	width:90%;
+	max-width:1300px;
+	margin:20px auto;
+	background: rgb(150,0,24,0.8);
+}
+.fixed-top{
+	position: relative;
+}
+/* ------------------------------------ Conctact ------------------------------------ */
+.contact_general_wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.contact_title{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact_container{
+  width: 100%;
+  background-color: rgb(400, 400, 400, 0.8);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-radius: 20px;
+}
+.contacto_form{
+  width: 100%;
+  padding: 10%;
+}
+
+/* ------------------------------------ Fin Contact ------------------------------------ */
+/* ------------------------------------ Footer ------------------------------------ */
+
+.footer{
+  width: 100%;
+  padding: 5px 10px;
+  position: relative;
+  bottom: 0px;
+  background-color:rgb(150,0,24,0.8);
+  display: flex;
+  flex-flow: column;
+}
+
+ul{
+ padding: 0;
+ margin: 0;
+}
+li {
+  list-style: none;
+  margin: 0 0 3px 0;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: white;
+}
+
+.footer_1{
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-around;
+}
+
+.footer_2{
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+}
+
+#medio{
+  border-left: solid;
+  border-right: solid;
+  border-width: thin;
+  border-color: white;
+}
+.footer_3{
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.footer_4{
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.afip img {
+  width: 50px;
+  padding: 10px;
+}
+
+.dh img{
+  width: 190px;
+  padding: 10px;
+}
+
+.footer_11{
+  padding: 20px;
+  width: 33%;
+  text-align: center;
+}
+
+
+ /* ------------------------------------ Fin Footer ------------------------------------ */
+
+@media screen and (max-width:800px ) {
+	header nav {
+		width:80%;
+		height:100%;
+		left:-100%;
+		margin:0;
+		position: fixed;
+	}
+
+	header nav ul li {
+		display:block;
+		float:none;
+		border-bottom:1px solid rgba(255,255,255, .3);
+	}
+	header nav .form-inline {
+		width:80%;
+		height:100%;
+		left:-100%;
+		margin:0;
+		position: fixed;
+		float:left;
+	margin-right: 30px;
+	margin-top: 2%;
+	}
+	.menu_bar {
+		display:block;
+		width:100%;
+		background:#ccc;
+	}
+
+	.menu_bar .bt-menu {
+		display:block;
+		padding:20px;
+		background:#024959;
+		color:#fff;
+		text-decoration:none;
+		font-weight: bold;
+		font-size:25px;
+		-webkit-box-sizing:border-box;
+		-moz-box-sizing:border-box;
+		box-sizing:border-box;
+	}
+
+	.menu_bar span {
+		float:right;
+		font-size:40px;
+	}
+	.form-row {
+
+        top: 50%;
+        left: 50%;
+        display: block;
+        position: absolute;
+        width: 750px;
+        height: 417px;
+
+        margin-top: -208.5px;
+        margin-left: -375px;
+    }
+	h2 {
+		text-align: center;
+	}
+	h6 {
+		color: #A4031F;
+	}
+	.register-login {
+		text-align: center;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.footer{
+      height:auto;
+    }
+    .footer_1{
+      display: flex;
+      flex-flow: column;
+      text-align: center;
+    }
+    .footer_11{
+      padding: 20px;
+      width: 100%;
+    }
+
+    #medio{
+      border: none;
+    }
+
+
+/* ------------------------------------ Discounts ------------------------------------ */
+.card-container .card a .card--hover {
+  display: inline;
+}
+.card-container .card .card--display {
+  display:none;
+}
+
+/* ------------------------------------ Fin Discounts ------------------------------------ */
+  }
