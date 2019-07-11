@@ -1,0 +1,226 @@
+
+*{
+  font-family: Arial;
+  box-sizing: border-box;
+}
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+	background-image: url('background.jpg');
+	    background-size: cover;
+		background-repeat: no-repeat;
+}
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: "background.jpg";
+}
+
+/* Navbar
+-------------------------------------------------- */
+header {
+	width:100%;
+}
+header nav {
+	width:90%;
+	max-width:1300px;
+	margin:20px auto;
+	background: rgb(150,0,24,0.8);
+}
+.navbar {
+background: rgb(150,0,24,0.8);
+}
+.navbar img{
+width:70px;
+height: 50px;
+}
+/* Singin
+-------------------------------------------------- */
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.form-signin .form-control {
+    position: relative;
+    box-sizing: border-box;
+    height: auto;
+    padding: 10px;
+    font-size: 16px;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: $input-height;
+  padding: $input-padding-y $input-padding-x;
+  font-family: $input-font-family;
+  @include font-size($input-font-size);
+  font-weight: $input-font-weight;
+  line-height: $input-line-height;
+  color: $input-color;
+  background-color: $input-bg;
+  background-clip: padding-box;
+  border: $input-border-width solid $input-border-color;
+  }
+
+  // Placeholder
+  &::placeholder {
+    color: $input-placeholder-color;
+    // Override Firefox's unusual default opacity; see https://github.com/twbs/bootstrap/pull/11526.
+    opacity: 1;
+  }
+
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+.text-center {
+    text-align: center!important;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+     width: 200px;
+    height: 150px;
+  margin-bottom: 1.5rem!important;
+}
+.form-signin {
+  width: 100%;
+  max-width: 330px;
+  padding: 15px;
+  margin: auto;
+}
+.form-signin .checkbox {
+  font-weight: 400;
+}
+.form-signin .form-control {
+  position: relative;
+  box-sizing: border-box;
+  height: auto;
+  padding: 10px;
+  font-size: 16px;
+}
+.btn {
+ display: inline-block;
+  font-family: arial;
+     width: 250px;
+    height: 35px;
+    display: inline-block;
+    margin-top: 20px;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  background-color: red;
+  border: $btn-border-width solid transparent;
+
+}
+
+
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0;
+     margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    }
+
+    // Inline-block all the things for "inline"
+    .form-group {
+      display: flex;
+      flex: 0 0 auto;
+      flex-flow: row wrap;
+      align-items: center;
+      margin-bottom: 0;
+    }
+
+.footer_4{
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.afip img {
+  width: 50px;
+  padding: 10px;
+}
+
+.dh img{
+  width: 190px;
+  padding: 10px;
+}
+
+.footer_11{
+  padding: 20px;
+  width: 33%;
+  text-align: center;
+}
+
+@media (max-width:800px) {
+  .footer{
+    height:auto;
+  }
+  .footer_1{
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+  }
+  .footer_11{
+    padding: 20px;
+    width: 100%;
+  }
+
+  #medio{
+    border: none;
+  }
+
+    
+@media (min-width: 360px) {
+
+            .                .
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
