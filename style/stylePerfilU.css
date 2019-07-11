@@ -4,13 +4,20 @@
 	margin:0;
 	padding:0;
 }
-body {
-	background-image: url('img/background.jpg');
-	    background-size: cover;
-		background-repeat: no-repeat;
-}
+
 header {
-	width:100%;
+width:100%;
+padding-left: 0%;
+padding-bottom: 3%;
+}
+
+body {
+	background-image: url('background.jpg');
+			background-size: cover;
+		background-repeat: no-repeat;
+			height: 90%;
+			margin-top: 20px;
+
 
 }
 header nav {
@@ -19,33 +26,80 @@ header nav {
 	margin:20px auto;
 	background: rgb(150,0,24,0.8);
 }
-.fixed-top {
-	top: 5px;
-	position: relative;
-}
-
 .navbar {
 background: rgb(150,0,24,0.8);
 }
-.container {
+.fixed-top{
+	position: relative;
+}
 
+h3{
+	width: 100%;
+ text-align: center;
+ margin-top: 10px;
+ margin-bottom: 10px;
 
 }
-.inputstl {
+.carritoli{
+width: 100%;
+ margin-left: 5px;
+ margin-top: 10px;
+ margin-bottom: 10px;
 
-    padding: 9px;
-    border: solid 1px #B3FFB3;
-    outline: 0;
-    box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
-    -moz-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
-    -webkit-box-shadow: rgba(0,0,0, 0.1) 0px 0px 8px;
-
-    }
-
-.btn-success {
-	background-color: grey;
-	border-color: black;
 }
+
+.Guardados{
+width: 100%;
+ margin-left: 5px;
+ text-align: center;
+ margin-top: 10px;
+ margin-bottom: 10px;
+
+}
+.fotoperfil{
+	float: right;
+	height: 50px;
+}
+
+img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 5%;
+  width: 140px;
+  align-items: center;
+}
+   body {
+   	background-image: url('img/background.jpg');
+   	    background-size: cover;
+   		background-repeat: no-repeat;
+			height: 90%;
+			margin-top: 20px;
+
+ }
+ h1 {
+	 width: 100%;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+
+}
+
+section{
+	margin-left: 2%;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+h4{
+   text-transform: uppercase;
+   color: white;
+   text-align: center;
+
+}
+
 
 .footer{
   width: 100%;
@@ -55,7 +109,7 @@ background: rgb(150,0,24,0.8);
   background-color:rgb(150,0,24,0.8);
   display: flex;
   flex-flow: column;
-  }
+}
 
 ul{
  padding: 0;
@@ -78,6 +132,7 @@ a:hover {
   display: flex;
   flex-flow: row;
   justify-content: space-around;
+
 }
 
 .footer_2{
@@ -85,6 +140,7 @@ a:hover {
   display: flex;
   flex-flow: row;
   justify-content: flex-end;
+
 }
 
 #medio{
@@ -99,6 +155,7 @@ a:hover {
   flex-flow: row;
   justify-content: center;
   text-align: center;
+
 }
 
 .footer_4{
@@ -107,6 +164,7 @@ a:hover {
   flex-flow: row;
   justify-content: center;
   text-align: center;
+
 }
 
 
@@ -118,17 +176,20 @@ a:hover {
 .dh img{
   width: 190px;
   padding: 10px;
+
 }
 
 .footer_11{
   padding: 20px;
   width: 33%;
   text-align: center;
+
 }
 
 @media (max-width:800px) {
   .footer{
     height:auto;
+		width: 100%;
   }
   .footer_1{
     display: flex;
@@ -144,4 +205,18 @@ a:hover {
     border: none;
   }
 
+	.fotoperfil{
+		height:auto;
+		float: initial
+
+	}
+
+
+}
+
+
+	}
+
+h1{
+	text-align: left;
 }
