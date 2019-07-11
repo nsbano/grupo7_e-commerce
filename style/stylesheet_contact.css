@@ -139,7 +139,7 @@ a:hover {
  /* ------------------------------------ Fin Footer ------------------------------------ */
 
 @media screen and (max-width:800px ) {
-	header nav {
+	/* header nav {
 		width:80%;
 		height:100%;
 		left:-100%;
@@ -207,7 +207,7 @@ a:hover {
 		text-align: center;
 		margin-top: 10px;
 		margin-bottom: 10px;
-	}
+	} */
 	.footer{
       height:auto;
     }
