@@ -52,6 +52,19 @@ header nav {
 }
 
 /* ------------------------------------ Fin Contact ------------------------------------ */
+/* ------------------------------------ Confirmacion Contact ------------------------------------ */
+/* .contact_confirmation_wrapper{
+	min-height: 500px;
+} */
+.contact_confirmation{
+	padding: 5%;
+}
+.contact_confirmation_wrapper .contact_confirmation a{
+	padding: 5px;
+	background-color: rgb(400, 400, 400, 0.8);
+}
+/* ------------------------------------ Fin confirmacion Contact ------------------------------------ */
+
 /* ------------------------------------ Footer ------------------------------------ */
 
 .footer{
