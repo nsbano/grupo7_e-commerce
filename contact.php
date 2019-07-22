@@ -89,7 +89,12 @@
 
 <!-- Aca termina el body -->
 
-  <footer>
+
+
+
+
+
+  <!-- <footer>
       <div class="footer">
         <div class="footer_1">
           <div class="footer_11">
@@ -132,7 +137,7 @@
         </div>
       </div>
     </div>
-</footer>
+</footer> -->
 
     </body>
 
