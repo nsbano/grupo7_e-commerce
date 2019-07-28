@@ -1,0 +1,134 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+@media screen and (min-width: 400px) and (max-width: 400px) {
+
+  .gallery{
+    background-color: black;
+    background-attachment: fixed;
+  }
+  .galeria{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    animation: galeria 2s;
+  }
+  @keyframes galeria {
+    0%,50%{
+      opacity: 0;
+      margin-top: 150px;
+    }
+  }
+
+
+}
+
+@media (min-width: 640px) and (max-width: 1600px) {
+
+  .gallery{
+    background-image:url('background.jpg');
+    background-attachment: fixed;
+  }
+  .logogaleria{
+    width: 350px;
+    margin-top: -30px;
+  }
+  .logogallery{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+
+    animation: logogallery 2s;
+  }
+  @keyframes logogallery{
+    0%,50%{
+      opacity: 0;
+      margin-top: 100px;
+    }
+  }
+  .tienda{
+    width: 250px;
+  }
+
+  .galeria{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    animation: galeria 3s;
+  }
+  @keyframes galeria {
+    0%,50%{
+      opacity: 0;
+      margin-top: 150px;
+    }
+  }
+  .imgprod{
+    border-radius: 25px 25px 0px 0px;
+  }
+
+  /* Navbar
+  -------------------------------------------------- */
+  header {
+  	width:100%;
+
+  }
+  header nav {
+  	width:90%;
+  	max-width:1300px;
+  	margin:20px auto;
+  	background: rgb(150,0,24,0.8);
+  }
+  .fixed-top {
+  	top: 5px;
+  	position: relative;
+  }
+
+  .navbar {
+  background: rgb(150,0,24,0.8);
+  }
+
+  /* CUSTOMIZE THE CAROUSEL
+  -------------------------------------------------- */
+
+  .descprod, .titprod{
+    padding-left: 10px;
+  }
+  .descprod{
+    line-height: 18px;
+    height: 40px;
+  }
+  .titprod{
+    margin-top: 5px;
+  }
+  .prodbox{
+    width: 500px;
+    height: 420px;
+    border: black solid 2px;
+    border-radius: 25px 25px 0px 0px;
+    margin: 40px;
+    font-family: arial;
+    font-size: 20px;
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+  img.imgprod {
+    width: 300px;
+}
+  #producto1, #producto2, #producto3{
+    margin-top: 50px;
+  }
+
+.boton{
+  background-color: rgb(150,0,24,0.5);
+  margin-left: 200px;
+    width: -webkit-fill-available;
+      height: 40px;
+  border-radius: 90px;
+  font-weight: bold;
+  margin-top: 5px;
+}
