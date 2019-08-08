@@ -1,4 +1,31 @@
 <?php
+/* Errores
+-------------------------------------------------- */
+$errors = [];
+​
+function is_email($email) {
+    return filter_var($email, FILTER_VALIDATE_EMAIL);
+}
+​
+
+if (!empty($_POST)) {
+​
+    if (empty($_POST['email'])) {
+        $errors['email'][] = 'El email es requerido';
+    }
+​
+    if (!is_email($_POST['email'])) {
+        $errors['email'][] = 'El email no es valido';
+    }
+​
+    if (between($_POST['password'], 6, 12)) {
+        $errors['password'][] = 'El password debe ser entre 6 y 12 caracteres';
+    }
+​
+}
+​
+var_dump($errors);
+​
 
 /* Validar mail
 -------------------------------------------------- */
@@ -7,6 +34,9 @@
   if ($_POST) {
     if (strlen($_POST["email"]) == 0) {
       return "El campo esta vacio";
+    }
+     if !(strlen($_POST["email"]) < 5 || strlen($_POST["email"]) < 30 ) {
+      $errors[$_POST["email"]]='El mail debe tener entre5 y 30 caracteres';
     }
 
     if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL) == false) {
@@ -56,34 +86,5 @@ function crearUsuario() {
 }
 
 
-/* Errores
--------------------------------------------------- */
-$errors = [];
-​
-function is_email($email) {
-    return filter_var($email, FILTER_VALIDATE_EMAIL);
-}
-​
-function between($txt, $min, $max) {
-    return strlen($txt) < $min || strlen($txt) > $max;
-}
-​
-if (!empty($_POST)) {
-​
-    if (empty($_POST['email'])) {
-        $errors['email'][] = 'El email es requerido';
-    }
-​
-    if (!is_email($_POST['email'])) {
-        $errors['email'][] = 'El email no es valido';
-    }
-​
-    if (between($_POST['password'], 6, 12)) {
-        $errors['password'][] = 'El password debe ser entre 6 y 12 caracteres';
-    }
-​
-}
-​
-var_dump($errors);
-​
+
 ?>
