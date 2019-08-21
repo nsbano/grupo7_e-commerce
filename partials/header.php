@@ -7,21 +7,25 @@
       <div class="collapse navbar-collapse justify-content-between" id="nav">
           <ul class="navbar-nav">
               <li class="nav-item" >
-                  <a class="nav-link text-light font-weight-bold px-3" href="index.html">HOME</a>
+                  <a class="nav-link text-light font-weight-bold px-3" href="index.php">HOME</a>
               </li>
               <li class="nav-item dropdown" data-toggle="dropdown">
-                  <a class="nav-link text-light font-weight-bold px-3 dropdown-toggle" href="index.html">PRODUCTOS</a>
+                  <a class="nav-link text-light font-weight-bold px-3 dropdown-toggle" href="index.php">PRODUCTOS</a>
                   <div class="dropdown-menu">
-                      <a class="dropdown-item" href="index.html">Hombre</a>
-                      <a class="dropdown-item" href="index.html">Mujer</a>
-                      <a class="dropdown-item" href="index.html">Niño</a>
+                      <a class="dropdown-item" href="index.php">Hombre</a>
+                      <a class="dropdown-item" href="index.php">Mujer</a>
+                      <a class="dropdown-item" href="index.php">Niño</a>
                   </div>
               </li>
               <li class="nav-item">
-                  <a class="nav-link text-light font-weight-bold px-3" href="contact.html">CONTACTO</a>
+                  <a class="nav-link text-light font-weight-bold px-3" href="contact.php">CONTACTO</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link text-light font-weight-bold px-3" href="discounts.html">PROMOCIONES</a>
+                  <a class="nav-link text-light font-weight-bold px-3" href="discounts.php">PROMOCIONES</a>
+              </li>
+
+              <li class="nav-item">
+                  <a class="nav-link text-light font-weight-bold px-3" href="register.php">REGISTRARSE</a>
               </li>
           </ul>
           <form class="form-inline ml-3">
