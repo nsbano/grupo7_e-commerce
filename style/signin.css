@@ -4,40 +4,16 @@
   box-sizing: border-box;
 }
 body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  
 	background-image: url('background.jpg');
 	    background-size: cover;
 		background-repeat: no-repeat;
 }
-body {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  background-image: "background.jpg";
-}
+
 
 /* Navbar
 -------------------------------------------------- */
-header {
-	width:100%;
-}
-header nav {
-	width:90%;
-	max-width:1300px;
-	margin:20px auto;
-	background: rgb(150,0,24,0.8);
-}
-.navbar {
-background: rgb(150,0,24,0.8);
-}
-.navbar img{
-width:70px;
-height: 50px;
-}
+
 /* Singin
 -------------------------------------------------- */
 .form-signin {
@@ -209,7 +185,7 @@ img {
     border: none;
   }
 
-    
+
 @media (min-width: 360px) {
 
             .                .
