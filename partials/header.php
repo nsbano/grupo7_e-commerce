@@ -27,10 +27,11 @@
               <li class="nav-item">
                   <a class="nav-link text-light font-weight-bold px-3" href="register.php">REGISTRARSE</a>
               </li>
-          </ul>
+               <a title="carrito" href="carrito.php"><img src="img/carrito.png" alt="carrito" /></a>
+              </ul>
           <form class="form-inline ml-3">
               <div class="input-group">
-                  <input type="text" class="form-control " placeholder="Buscar" >
+                 <input type="text" class="form-control " placeholder="Buscar" >
                   <button type="submit"><i class="fa fa-search"></i></button>
               </div>
           </form>
