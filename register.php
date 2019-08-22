@@ -1,21 +1,13 @@
 <?php
-  $pageTitle = 'Formulario de Registro | Proyectos DH';
-  require_once 'forms/forms.php';
-  if ($_POST) {
-
-    if (length(old('nombre'), 5, 30)) {
-      addError('nombre', 'El nombre debe tener entre 5 y 30 caracteres');
-    }
-
-    if (!email(old('email'))) {
-      addError('email', 'Debes escribir un email válido');
-    }
-    if (isValid()) {
-      header('location: registro-exitoso.php');
-    }
-  }
-?>
+ if (isset($_POST['submit'])) {
+    $nombre = $_POST['nombre'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+    $repass = $_POST['password2'];
+ }
+ ?>
 <!DOCTYPE html>
+<html>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -35,15 +27,13 @@
                 <div class="form-group">
                     <label for="name1" class="col-sm-2 control-label"><b>Nombre:</b></label>
                     <div class="col-sm-6">
-                      <input type="name" class="form-control inputstl" id="name1" name="nombre" placeholder="Nombre Completo" value="<?= old('projectName') ?>">
+                      <input type="name" class="form-control inputstl" id="name" name="nombre" placeholder="Nombre Completo" value="<? php if(isset($nombre)) echo $nombre ?>">
                     </div>
-                    <?php if (hasError('nombre')) : ?>
-                      <p class="errors"><?= getError('nombre') ?></p>
-                    <?php endif ?>
+
                 </div>
 
                 <div class="form-group">
-                    <label for="gender1" class="col-sm-2 control-label"><b>Sexo:</b></label>
+                    <label for="gender" class="col-sm-2 control-label"><b>Sexo:</b></label>
                     <div class="col-sm-6">
                         <select class="form-control inputstl" id="gender1">
                             <option>Hombre</option>
@@ -52,31 +42,22 @@
                     </div>
                 </div>
                 <div class="form-group">
-                    <label for="email1" class="col-sm-2 control-label"><b>Email:</b></label>
+                    <label for="email" class="col-sm-2 control-label"><b>Email:</b></label>
                     <div class="col-sm-6">
-                        <input type="email" class="form-control inputstl" id="email1" name="email" placeholder="Email" value="<?= old('email') ?>">
-                        <?php if (hasError('email')) : ?>
-                    <p class="errors"><?= getError('email') ?></p>
-                  <?php endif ?>
+                        <input type="email" class="form-control inputstl" id="email1" name="email" placeholder="Email" value="<? php if(isset($email)) echo $email ?>">
                     </div>
 
                 </div>
                 <div class="form-group">
-                    <label for="user" class="col-sm-2 control-label"><b>Usuario:</b></label>
-                    <div class="col-sm-6">
-                        <input type="user" class="form-control inputstl" id="phone1" name="usuario" placeholder="Usuario">
-                    </div>
-                </div>
-                <div class="form-group">
                     <label for="password1" class="col-sm-2 control-label"><b>Contraseña:</b></label>
                     <div class="col-sm-6">
-                        <input type="password1" class="form-control inputstl" id="password1" name="password1" placeholder="Contraseña" value="">
+                        <input type="password" class="form-control inputstl" id="password1" name="password" placeholder="Contraseña" value="">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="password2" class="col-sm-2 control-label"><b>Contraseña:</b></label>
                     <div class="col-sm-6">
-                        <input type="password2" class="form-control inputstl" id="password2" name="repass" placeholder="Repetir Contraseña" value="">
+                        <input type="password" class="form-control inputstl" id="password2" name="repass" placeholder="Repetir Contraseña" value="">
                     </div>
                 </div>
                 <div class="form-group">
@@ -84,9 +65,12 @@
                         <button type="submit" class="btn btn-lg btn-block btn-success" href= 'registro-exitoso.php'>Crear Cuenta</button>
                     </div>
                 </div>
+                   <?php
+                    include ('validar-form.php');
+                    ?>
             </form>
         </div>
-        <div align='center'>Si ya tenes una cuenta clica <a href="sing-in.php" style="color:blue;">aquí</a></br>.</div>
+        <div align='center'>Si ya tenes una cuenta hacé click <a href="sing-in.php" style="color:blue;">aquí</a></br>.</div>
         </main>
   <?php   require_once 'partials/footer.php' ?>
 </body>
