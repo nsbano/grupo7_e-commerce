@@ -21,13 +21,13 @@
             <div class="card mb-3">
               <div class="row no-gutters">
                 <div class="col-md-4 col-lg-3 h-75 w-75 m-auto">
-                  <img src="zapatillas/zapatillas_1.jpg" class="img-fluid" alt="zapatilla">
+                  <img src="img/zapatillas/zapatillas_1.jpg" class="img-fluid" alt="zapatilla">
                 </div>
                 <div class="col">
                   <div class="card-body pb-0">
-                    <h3 class="card-title"><a href="productos.html">Nike Air Zoom Pegasus 34 </a></h3>
+                    <h3 class="card-title"><a href="carrito.php">Nike Air Zoom Pegasus 34 </a></h3>
 
-                    <a href="productos.html" class="btn btn-primary btn-block">Comprar</a>
+                    <a href="carrito.php" class="btn btn-primary btn-block">Comprar</a>
                     <p class="card-text mt-2 lead">COMODIDAD TRANSPIRABLE,FIRMEZA SEGURA,GRAN REACTIVIDAD.</p>
                     <p class="card-text"><a href="#"><i class="fas fa-map-marker-alt"></i> Direccion</a></p>
                   </div>
