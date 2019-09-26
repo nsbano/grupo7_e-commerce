@@ -12,21 +12,21 @@
               <li class="nav-item dropdown" data-toggle="dropdown">
                   <a class="nav-link text-light font-weight-bold px-3 dropdown-toggle" href="index.php">PRODUCTOS</a>
                   <div class="dropdown-menu">
-                      <a class="dropdown-item" href="index.php">Hombre</a>
-                      <a class="dropdown-item" href="index.php">Mujer</a>
-                      <a class="dropdown-item" href="index.php">Niño</a>
+                      <a class="dropdown-item" href="{{url('/product')}}">>Hombre</a>
+                      <a class="dropdown-item" href="{{url('/product')}}">Mujer</a>
+                      <a class="dropdown-item" href="{{url('/product')}}">Niño</a>
                   </div>
               </li>
               <li class="nav-item">
                   <a class="nav-link text-light font-weight-bold px-3" href="contact.php">CONTACTO</a>
               </li>
               <li class="nav-item">
-                  <a class="nav-link text-light font-weight-bold px-3" href="discounts.php">PROMOCIONES</a>
+                  <a class="nav-link text-light font-weight-bold px-3" href="{{url('/discount')}}">PROMOCIONES</a>
               </li>
               <li class="nav-item">
                   <a class="nav-link text-light font-weight-bold px-3" href="register.php">REGISTRARSE</a>
               </li>
-               <a title="carrito" href="carrito.php"><img src="img/carrito.png" alt="carrito" /></a>
+               <a title="carrito" href="{{url('/cart')}}"><img src="img/carrito.png" alt="carrito" /></a>
               </ul>
           <form class="form-inline ml-3">
               <div class="input-group">
