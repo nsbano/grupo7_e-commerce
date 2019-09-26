@@ -13,7 +13,7 @@
      <h4>Ayuda</h4>
      <ul>
        <li><a href="contact.html"><ion-icon name="contact"></ion-icon>Contactanos!</a></li>
-       <li><a href="faq.html"><ion-icon name="help"></ion-icon>Preguntas frecuentes</a></li>
+       <li><a href=""{{url('/faqs')}}"l"><ion-icon name="help"></ion-icon>Preguntas frecuentes</a></li>
      </ul>
    </div>
    <div class="footer_11">
